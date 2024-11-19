@@ -1,0 +1,9 @@
+{
+    "name": "John Doe",
+    "dob": "1990-01-01",
+    "breed": "Golden Retriever",
+    "weight": 30,
+    "color": "Golden",
+    "purchaseDate": "2020-01-01",
+    "purchasePrice": 1000
+}
