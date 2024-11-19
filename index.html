@@ -22,30 +22,31 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             max-width: 400px;
             width: 90%;
-            white-space: pre-wrap;
         }
         h1 {
             text-align: center;
             color: #333;
+        }
+        p {
+            margin: 10px 0;
+            color: #555;
+        }
+        .label {
+            font-weight: bold;
+            color: #222;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Bio Data</h1>
-        <pre id="jsonData"></pre>
+        <p><span class="label">Name/ID:</span>A123</p>
+        <p><span class="label">BOB:</span> 17-06-2004</p>
+        <p><span class="label">Breed:</span> XYZ</p>
+        <p><span class="label">Weight:</span> 100kg</p>
+        <p><span class="label">Color:</span> Brown</p>
+        <p><span class="label">Purchase Date:</span> 24-01-2024</p>
+        <p><span class="label">Purchase Price:</span> 1,00,000</p>
     </div>
-
-    <script>
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('jsonData').innerText = JSON.stringify(data, null, 2);
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-                document.getElementById('jsonData').innerText = 'Error loading data.';
-            });
-    </script>
 </body>
 </html>
